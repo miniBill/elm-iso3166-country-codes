@@ -2,7 +2,7 @@
 
 Convert to and from alpha2, alpha3, numeric codes and translate into 23 languages.
 
-``` elm
+```elm
 import Iso3166
 import Iso3166.Dutch
 
@@ -28,6 +28,7 @@ translated =
 ```
 
 ## Asset size
+
 Note that using this package might increase asset size a quite a bit.
 Using `toAlpha2` and one `toName` adds about 2kB to a uglified + gzipped js file.
 
@@ -36,6 +37,10 @@ It's just data and this might not be required to be bundled and could easily be 
 ## Generate
 
 Clone [stefangabos/world_countries](https://github.com/stefangabos/world_countries) into this repo, run `cabal run elm-iso3166` to generate Elm files.
+
+### Using `nix`
+
+Clone as above, then run `nix run` instead of `cabal run elm-iso3166`.
 
 ## Credits
 
